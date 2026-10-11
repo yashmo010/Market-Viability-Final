@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: market-viability-predictor
+    runtime: python
+    rootDir: Legitimate
+    buildCommand: bash build.sh
+    startCommand: uvicorn src.app.api:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9

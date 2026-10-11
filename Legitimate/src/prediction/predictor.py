@@ -22,9 +22,10 @@ from src.extraction.extraction_prompt import APP_ASPECT_KEYS, PHYSICAL_ASPECT_KE
 from src.prediction.bridging_layer import bridge_aspects
 from src.prediction.maturity import apply_maturity_adjustments
 
-MODELS_DIR = Path("models")
-PROFILES_PATH = Path("data/extracted/category_profiles.json")
-FEATURES_DIR = Path("data/extracted")
+ROOT_DIR = Path(__file__).resolve().parents[2]
+MODELS_DIR = ROOT_DIR / "models"
+PROFILES_PATH = ROOT_DIR / "data/extracted/category_profiles.json"
+FEATURES_DIR = ROOT_DIR / "data/extracted"
 
 PHYSICAL_CATEGORIES = {"wireless_headphones", "bluetooth_speakers", "ice_makers",
                        "smartwatches", "power_banks"}
