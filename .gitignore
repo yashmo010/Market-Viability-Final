@@ -1,0 +1,48 @@
+# Security & Secrets
+**/llm_providers.yaml
+!**/llm_providers.yaml.template
+.env
+.env.*
+!.env.template
+!.env.example
+*.pem
+*.key
+*.cert
+
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Node / Frontend
+node_modules/
+.npm/
+.oxlint-cache
+
+# Databases & Large Local Storage
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs & Temporary Files
+*.log
+*.tmp
+*.bak
+
+# IDE & OS Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Historical Codebase Archive (Embedded Repos / Large DBs)
+backup/01_historical_codebase/
+
